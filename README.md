@@ -26,10 +26,10 @@ This project is a frontend data analysis task for **Manufac Analytics**. It visu
 ## Screenshots
 
 ### Table Component
-![Table Screenshot](path-to-your-table-screenshot.png)
+![Table Screenshot](https://github.com/user-attachments/assets/f0f9e445-3d51-4b42-983a-3ab5c31a31f5)
 
 ### Bar Chart Component
-![Bar Chart Screenshot](path-to-your-bar-chart-screenshot.png)
+![Bar Chart Screenshot](https://github.com/user-attachments/assets/9cedbdf1-1d60-4f45-8ebf-def5d626d045)
 
 ---
 
@@ -37,11 +37,11 @@ This project is a frontend data analysis task for **Manufac Analytics**. It visu
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/your-repository-name.git
+   git clone https://github.com/web-cracker/Frontend-Data-Analysis-Task-v5-
    ```
 2. Navigate to the project directory:
    ```bash
-   cd your-repository-name
+   cd Frontend-Data-Analysis-Task-v5-
    ```
 3. Install dependencies:
    ```bash
