@@ -4,7 +4,7 @@ import cropData from "../assets/cropData.json";
 const TableComponent = () => {
   const aggregatedData = cropData.reduce((acc, curr) => {
     const year = curr.Year;
-    const production = parseFloat(curr["Crop Production (UOM:t(Tonnes))"] || "0");
+    const production = parseFloat(String(curr["Crop Production (UOM:t(Tonnes))"] || "0"));
     if (!acc[year]) {
       acc[year] = { maxCrop: curr["Crop Name"], minCrop: curr["Crop Name"], maxProduction: production, minProduction: production };
     } else {
@@ -25,7 +25,7 @@ const TableComponent = () => {
       <Title order={2} style={{ marginBottom: "1rem", textAlign: "center" }}>
         Crop Production Table
       </Title>
-      <Table striped highlightOnHover withBorder withColumnBorders>
+      <Table striped highlightOnHover withColumnBorders>
         <thead style={{ backgroundColor: "#F3F4F6" }}>
           <tr>
             <th>Year</th>

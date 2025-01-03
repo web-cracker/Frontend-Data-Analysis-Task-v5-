@@ -10,7 +10,7 @@ const BarChartComponent = () => {
     const aggregatedYield: Record<string, { totalYield: number; count: number }> = {};
     cropData.forEach((item) => {
       const cropName = item["Crop Name"];
-      const yieldValue = parseFloat(item["Yield Of Crops (UOM:Kg/Ha(KilogramperHectare))"] || "0");
+      const yieldValue = parseFloat(String(item["Yield Of Crops (UOM:Kg/Ha(KilogramperHectare))"] || "0"));
       if (!aggregatedYield[cropName]) {
         aggregatedYield[cropName] = { totalYield: yieldValue, count: 1 };
       } else {
